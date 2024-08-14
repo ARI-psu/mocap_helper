@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="topic_name" default="no_drone_object_selected" />
+
+  <node name="vicon_replay_node" pkg="vicon_replay" type="vicon_replay" output="screen" args="$(arg topic_name)">
+  </node>
+
+</launch>
